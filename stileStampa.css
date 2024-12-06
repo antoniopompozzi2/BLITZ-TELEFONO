@@ -1,0 +1,388 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 85vw;
+}
+
+#testa {
+    line-height: 0.85;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo, #didascalia {
+    display: inline;
+}
+
+#logo {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16vw;
+    text-shadow: 0 0 0.3vw black;
+}
+
+#didascalia {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.26vw;
+    margin-bottom: 0.5%;
+}
+
+#mascotte {
+    position: absolute;
+    width: 19.5%;
+    bottom: 2%;
+    right: 41.5%;
+}
+
+#bottone_notte {
+    display: none;
+}
+
+.riga {
+    width: 99%;
+    border: 0.205vw solid black;
+    height: 0;
+    margin: auto;
+}
+
+#rigaBLITZ {
+    margin-top: 1%;
+}
+
+nav {
+    display: none;
+}
+
+main{
+    font-family: "Oswald", sans-serif;
+}
+
+#articolo1 {
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 1.2%;
+    margin-bottom: 1%;
+    margin-top: 1.2%;
+    width: 60%;
+    border-right: 0.25vw solid rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+#titolo_articolo1 {
+    border: none;
+    background: none;
+    line-height: 0.5;
+    font-optical-sizing: auto;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 3.89vw;
+    text-shadow: 0 0 0.22vw black;
+    margin-top: 1.5%;
+    margin-left: 0.25%;
+}
+
+#sottotitolo_articolo1 {
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.7vw;
+    position: absolute;
+    top: 10%;
+    left: 0.8%;
+}
+
+.autore {
+    display: none;
+}
+
+#contenitore_contenuto_articolo1 {
+    position: relative;
+    margin-top: 3.2%;
+}
+
+#immagine_articolo1 {
+    object-fit: cover;
+    margin-top: 0.65%;
+    margin-left: 0.65%;
+    margin-right: 1.5%;
+    width: 50%;
+    height: 50%;
+    border: 0.5vw solid black;
+}
+
+#caption_articolo1 {
+    margin-left: 0.7%;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 0.9;
+}
+
+#anteprima_articolo1 {
+    position: absolute;
+    top: 0.8%;
+    left: 52.2%;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.235vw;
+    width: 46%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#articoli_consigliati {
+    float: right;
+    width: 37.3%;
+    margin-right: 1%;
+    margin-top: 1.5%;
+}
+
+#consigliati {
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2.8vw;
+}
+
+.contenitore_consigliato {
+    position: relative;
+    height: 6vh;
+    padding: 2%;
+    border: 0.35vw solid rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.titolo_articolo_consigliato {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 0.4%;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.85vw;
+    margin-top: 1%;
+}
+
+#kaftus {
+    font-family: 'Kaftus', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.85vw;
+}
+
+.autore_articolo_consigliato {
+    display: none;
+}
+
+#rayquaza {
+    z-index: 1;
+    position: absolute;
+    bottom: -18%;
+    left: 68.3%;
+    width: 12.1vw;
+}
+
+#buzz {
+    z-index: 1;
+    position: absolute;
+    bottom: -5%;
+    left: 64%;
+    width: 12.5vw;
+}
+
+#totoro {
+    position: absolute;
+    top: 1%;
+    left: 69%;
+    width: 9vw;
+}
+
+#riga_divisoria1 {
+    width: 99%;
+    border: 0.205vw solid #d3d3d3;
+    height: 0;
+    margin: auto;
+}
+
+#articolo_grande {
+    float: left;
+    width: 42%;
+}
+
+#titolo_articolo_grande {
+    border: none;
+    background: none;
+    cursor: pointer;
+    line-height: 1.02;
+    text-align: right;
+    font-optical-sizing: auto;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 4.1vw;
+    text-shadow: 0 0 0.22vw black;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    margin-bottom: 0.4%;
+} 
+
+#grande {
+    font-size: 4.41vw;
+}
+
+#sottotitolo_articolo_grande {
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.2vw;
+    line-height: 1.15;
+    margin-left: 1.35%;
+}
+
+#autore_articolo_grande {
+    display: none;
+}
+
+#anteprima_grande {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.235vw;
+    width: 96.3%;
+    text-align: justify;
+    margin-right: 2.2%;
+    margin-bottom: 1.5%;
+}
+
+#video {
+    float: left;
+    width: 57.9%;
+}
+
+#video1 {
+    display: none;
+}
+
+#sostituzione {
+    width: 98%;
+    border: 0.5vw solid black;
+    margin-left: 0.6%;
+    margin-top: 4%;
+}
+
+#fintacaption {
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 0.65;
+    margin-left: 0.6%;
+    margin-bottom: 1.5%;
+    margin-top: 0.3%;
+}
+
+#ultimo {
+    text-align: center;
+}
+
+#nuovi_articoli {
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 3.05vw;
+    line-height: 1.2;
+    margin-top: 0.4%;
+}
+
+.lit {
+    color: orange;
+}
+
+#row_finale{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5%;
+    margin-bottom: 1%;
+}
+
+.row {
+    width: 99%;
+    position: relative;
+    height: 6vh;
+    padding: 2%;
+    border: 0.35vw solid rgba(0, 0, 0, 0.2);
+    margin-top: 2.15%;
+    margin-bottom: 2%;
+}
+
+#hei {
+    z-index: 1;
+    position: absolute;
+    width: 44.3%;
+    bottom: -0.7%;
+    left: 54.5%;
+}
+
+#giratina {
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+    bottom: -13%;
+    left: 61.5%;
+}
+
+#canada {
+    z-index: 1;
+    position: absolute;
+    width: 58%;
+    bottom: 0;
+    left: 53%;
+}
+
+.titolo_row {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.25;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.7vw;
+    margin-left: 0.35%;
+}
+
+.autore_row {
+    display: none;
+}
+
+#autore_row_modificato1 {
+    background: linear-gradient(180deg, #36D9A8, #366CD9, #0002DC);
+    background-clip: text;
+    color: transparent;
+}
+
+#ultima_modifica {
+    display: none;
+}
+
+#end {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 3vw;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#end1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}

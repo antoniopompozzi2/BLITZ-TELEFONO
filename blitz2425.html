@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Metadati -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLITZ</title>
+    <!-- Collegamenti ai fogli di stile esterno -->
+    <link rel="stylesheet" href="blitz2425style.css" media="screen">
+    <link rel="stylesheet" href="stileStampa.css" media="print"> 
+    <link rel="stylesheet" href="stileMobile.css" media="only screen and (max-width: 510px)">
+    <!-- Collegamento al font Oswald di Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+    <!-- Collegamento al font Kaftus di cdnfonts -->
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/kaftus');
+    </style>
+    <!-- Mod. Notte -->
+    <script src="notte.js" defer></script>
+</head>
+<body onLoad="document.getElementById('didascalia').innerHTML = didascaliaJS[indiceCasuale]">
+    <header>
+        <!-- Logo e slogan del sito -->
+        <div id="testa">
+            <a href="blitz2425.html">
+                <h1 id="logo">BLITZ</h1>  
+            </a>
+            <h3 id="didascalia" >
+                Parla dei tuoi interessi con il mondo che ti circonda.
+            </h3>
+            <script src="didascalia.js" defer></script>
+            <figure>
+                <img id="mascotte" src="immagini home/blitzky2.png" alt="Mascotte">
+            </figure>
+            <!-- onclick è una chiamata -->
+            <button id="bottone_notte" onclick="NotteMode()">MODALITÀ NOTTE</button>
+        </div>
+        <hr class="riga" id="rigaBLITZ">
+    </header>
+
+    <nav>
+        <!-- Accesso e creazione di un account -->
+        
+        <div class="center_text">
+            <a href="accesso2425.html">
+                <button id="accesso">CREA IL TUO ACCONT E INIZIA A SCRIVERE!</button>
+            </a>
+        </div>
+        <hr class="riga">
+        <!-- Barra di ricerca -->
+        <div class="cerca">
+            <input type="text" id="input_cerca" placeholder="CERCA">
+        </div>
+    </nav>
+
+    <main>
+        <!-- Primo Articolo -->
+        <section>
+            <div id="articolo1">
+                <!-- Titolo e Sottotitolo del primo articolo -->
+                <a href="primo articolo/articolo1.html">
+                    <button id="titolo_articolo1">CHROMAKOPIA: IL NUOVO IGOR</button>
+                </a>
+                <div>
+                    <h3 id="sottotitolo_articolo1">La recensione del nuovo stravagante album di Tyler, the Creator.</h3>
+                    <h4 class="autore" id="autore_articolo1">di <span id="fiamma_blu">blitzuser023</span></h4>  
+                </div>
+                <div id="contenitore_contenuto_articolo1">
+                    <div>
+                        <figure>
+                            <img id="immagine_articolo1" src="immagini home/chromakopia.jpg" alt="chromakopia">
+                            <figcaption id="caption_articolo1"><em>~ L'evocativa copertina del nuovo album firmato Tyler Okonma, uscito il 28 ottobre.</em></figcaption>
+                        </figure>   
+                    </div>
+                    <div id="anteprima_articolo1">
+                        L’ottavo disco di Tyler, The Creator comincia con i consigli di sua madre Bonita Smith, che mettono in luce l’anima di un album in cui il racconto è integralmente orientato verso la ricerca di consapevolezza. Come in ognuno dei suoi lavori, Tyler Okonma interpreta un personaggio (è impossibile dimenticarsi dell'iconico IGOR). In CHROMAKOPIA, Tyler ci nasconde la sua identità e vive in un mondo bianco e nero. Guardando con una certa dose di cinismo i testi dei brani che compongono questo progetto, capiamo che Tyler sta interpretando un personaggio che ha compreso per la prima volta che diventare adulti non è cosa da poco: con l’escamotage di un nuovo personaggio...
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Raccolta Articoli consigliati -->
+        <section>
+            <div id="articoli_consigliati">
+                <h1 id="consigliati">ARTICOLI CONSIGLIATI</h1>
+                <hr class="riga">
+                <!-- Primo articolo consigliato -->
+                <div class="contenitore_consigliato">
+                    <a href="articoli consigliati/articolo_consigliato1.html">
+                        <button class="titolo_articolo_consigliato">LE CARTE POKÉMON PIÙ<br>BELLE DEGLI ULTIMI ANNI</button>
+                    </a> 
+                    <h4 class="autore_articolo_consigliato">di <span id="autore_modificato1">blitzuser996</span></h4>
+                    <figure>
+                        <img id="rayquaza" src="immagini home/rayquazapng.png" alt="Rayquaza">
+                    </figure> 
+                </div>
+                <!-- Secondo Articolo consigliato -->
+                <div class="contenitore_consigliato">
+                    <a href="articoli consigliati/articolo_consigliato2.html">
+                        <button class="titolo_articolo_consigliato">"<span id="kaftus">CineSfera</span>", SOLO<br>SU RADIO UNITUS!</button>
+                    </a>
+                    <h4 class="autore_articolo_consigliato">di <span id="autore_modificato2">blitzuser001</span></h4>
+                    <figure>
+                        <img id="buzz" src="immagini home/buzzpng2.png" alt="Buzz Lightyear">
+                    </figure> 
+                </div>
+                <!-- Terzo Articolo consigliato -->
+                <div class="contenitore_consigliato">
+                    <a href="articoli consigliati/articolo_consigliato3.html">
+                        <button class="titolo_articolo_consigliato">LA MERAVIGLIOSA MUSICA<br>DELLO STUDIO GHIBLI</button>
+                    </a>
+                    <h4 class="autore_articolo_consigliato"><span class="red">DOSSIER</span> di <span id="autore_modificato3">blitzuser985</span></h4>
+                    <figure>
+                        <img id="totoro" src="immagini home/2totoropng.png" alt="Totoro">
+                    </figure> 
+                </div>
+            </div>
+        </section>
+        <hr id="riga_divisoria1" class="riga">
+        <!-- Articolo Grande -->
+        <section>
+            <div id="articolo_grande">
+                <a href="articolo grande/articologrande.html">
+                    <button id="titolo_articolo_grande"><span id="grande">LA TOP 10 CANZONI</span> DI KENDRICK LAMAR</button>
+                </a>
+                <div>
+                    <h3 id="sottotitolo_articolo_grande">Senza dubbio uno dei migliori rapper di sempre.</h3>
+                    <h4 class="autore" id="autore_articolo_grande">di <span id="corallo">blitzuser777</span></h4>  
+                </div>
+                <div>
+                    <p id="anteprima_grande">
+                        K-Dot è sicuramente uno degli artisti più influenti di sempre, ha scritto canzoni in grado di emozionare e coinvolgere chiunque. Voglio parlarvi di quelle che, secondo me, sono le sue 10 canzoni migliori, almeno per ora. È stato difficilissimo, bisogna ammetterlo. Ci sarà molto di cui discutere. Innanzitutto, credo che sia sempre opportuno fare un ripassino di storia dell'artista nel momento in cui costruiamo una classifica, seppur personale, delle sue canzoni. Kendrick Lamar Duckworth, classe <strong>1987</strong>, è uno degli artisti rap più famosi del mondo. Lavora prima con lo pseudonimo di “K.Dot”, pubblicando diversi mixtape, ma è nel <strong>2010</strong>, quando decide di lavorare utilizzando il suo vero nome, che inizia a diventare famoso. Pubblica <em>Overly Dedicated</em> nel <strong>2010</strong> e <em>Section.80</em> un anno dopo, ed è qui che il suo nome inizia a diffondersi. Conosce Dr.Dre, uno dei volti più importanti dell’Hip-Hop americano, e crea capolavori uno dopo l’altro: <em>Good Kid M.A.A.D City</em> nel nel <strong>2012</strong>, <em>To Pimp a Butterfly</em> nel <strong>2015</strong>, <em>untitled unmastered.</em> nel <strong>2016</strong>, <em>DAMN.</em> nel <strong>2017</strong>, nel <strong>2018</strong> cura la colonna sonora di <em>Black Panther</em>...
+                    </p>
+                </div>
+            </div>
+            <div id="video">
+                <video id="video1" controls>
+                    <source src="video home/kendrick.mp4" type="video/mp4">
+                </video>
+                <figure>
+                    <img id="sostituzione" src="immagini home/kendrick-lamar-gnx.jpg" alt="K-Dot">
+                </figure>
+                <p id="fintacaption"><em>~ Spezzoni degli iconici video di Kendrick Lamar; il più recente è il video di "squabble up", canzone che domina le classifiche fin da quando è uscita.</em></p>
+            </div>
+        </section>
+        <hr id="riga_divisoria1" class="riga">
+        <!-- Row finale di articoli-->
+        <section>
+            <div id="ultimo">
+                <h2 id="nuovi_articoli">ECCO ALCUNI NUOVI ARTICOLI <span class="lit">LIT</span> CHE POTREBBERO INTERESSARTI:</h2>
+            </div>
+        </section>
+        <section id="row_finale">
+            <div id="row1" class="row">
+                <a href="row finale/row1.html">
+                    <button class="titolo_row" class="row">LA SERIE ANIMATA<br>MIGLIORE DEL 2024</button>
+                </a> 
+                <h4 class="autore_row">di <span id="autore_row_modificato1">blitzuser009</span></h4>
+                <figure>
+                    <img id="hei" src="immagini home/hei.png" alt="Arcane">
+                </figure>
+            </div>
+            <div id="row2" class="row">
+                <a href="row finale/row2.html">
+                    <button class="titolo_row">I GIOCHI POKÉMON<br>PIÙ BELLI DELL'ERA DS</button>
+                </a> 
+                <h4 class="autore_row">di <span id="autore_modificato1">blitzuser996</span></h4>
+                <figure>
+                    <img id="giratina" src="immagini home/giratina.png" alt="Giratina">
+                </figure>
+            </div>
+            <div id="row3" class="row">
+                <a href="row finale/row3.html">
+                    <button class="titolo_row">HO VISTO L'ALTRA<br>PARTE DEL MONDO</button>
+                </a> 
+                <h4 class="autore_row">di <span id="autore_modificato3">blitzuser985</span></h4>
+                <figure>
+                    <img id="canada" src="immagini home/canada_processed.jpg" alt="Canada">
+                </figure>
+            </div>
+        </section>
+        <hr class="riga">
+    </main>
+
+    <footer>
+        <div id="ultima_modifica">
+            <span>
+                Ultima modifica di BLITZ:
+            </span>
+            <script src="tempomodifica.js"></script>
+            <span>
+                (data in formato USA mm/gg/aaaa)
+            </span>
+        </div>
+        <div id="end">
+            © <span id="end1">BLITZ</span> 2025 creato da Antonio Pompozzi tutti i diritti sono riservati.
+        </div>
+    </footer>
+</body>
+</html>
